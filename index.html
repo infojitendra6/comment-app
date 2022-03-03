@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Comment Section App</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</head>
+
+<body onload="showAlert()" style="background-color: rgb(224, 235, 226)">
+    <div class="top" >
+        <h1 style="color: rgb(14, 12, 151); display: inline; padding-top: 10px; padding-left: 20px; font-family: cursive;">Comment Section</h1>
+        <input type="text" id="userName" style="float: right; display: inline; width: 250px; border: 2px solid red; margin-top: 10px; margin-right: 20px;" placeholder="Enter your name to add comment" onchange="changeColorToGreen()">
+    </div>
+    <div class="container bootdey" >
+        <div class="col-md-12 bootstrap snippets">
+            <div class="panel" style="background-color: rgb(196, 233, 202);">
+                <div class="panel-body firstComponent">
+                    <textarea id = "writeCommentHere" class="form-control" rows="2" placeholder="What are you thinking?" style="width: 500px;"></textarea>
+                    <div class="mar-top clearfix">
+                        <button id = "shareButton" class="btn btn-sm btn-primary pull-right" type="submit" style="margin-left: 15px;" onclick="addComment()"><i class="fa fa-pencil fa-fw"></i> Share</button>
+                    </div>
+                </div>
+            </div>
+            <div class="panel" style="background-color: rgb(196, 233, 202);">
+                <div class="panel-body" id = "displayCommentArea">
+                    <!-- Newsfeed Content -->
+                  
+                    <!-- End Newsfeed Content -->
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="index.js" defer></script>
+
+</html>
